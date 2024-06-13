@@ -1,0 +1,145 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    display: grid;
+    height: 50rem;
+    width: 80rem;
+    margin-top: 5vh;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 6fr 6fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    'box1 box2 box3'
+    'box4 box4 box4'
+    'box5 box5 box5'
+    ;
+}
+
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+
+
+.box4 {
+    grid-area: box4;
+    display: flex;
+    justify-items: baseline;
+}
+
+.triangle-dark {
+    position: absolute;
+    z-index: 2;
+    top: 8.8rem;
+    left: 39rem;
+    width: 0;
+    height: 0;
+    border-left: 15rem solid transparent;
+    border-right: 15rem solid transparent;
+    border-bottom: 40rem solid #008037;
+}
+
+.triangle-light {
+    position:absolute;
+    z-index: 3;
+    top: 15.87rem;
+    left: 57rem;
+    width: 0;
+    height: 0;
+    border-left: 11rem solid transparent;
+    border-right: 11rem solid transparent;
+    border-bottom: 33rem solid #c9e265;
+}
+
+.circle-pink {
+    background-color: #ff8888;
+}
+
+.circle-yellow {
+    background-color: #ffde59;
+}
+
+.circle-big, .circle-small {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+}
+
+.circle-big {
+    height: 10rem;
+    width: 10rem;
+}
+
+.circle-small {
+    height: 5rem;
+    width: 5rem;
+}
+
+.circle1 {
+    top: 20rem;
+    left: 18rem;
+}
+
+.circle2 {
+    top: 8rem;
+    left: 6rem;
+}
+
+.circle3 {
+    top: 29rem;
+    left: 4rem;
+}
+
+.circle4 {
+    top: 10rem;
+    left: 19rem;
+}
+
+.circle5 {
+    top: 19rem;
+    left: 2rem;
+}
+
+.circle6 {
+    top: 33rem;
+    left: 16rem;
+}
+
+
+.box5 {
+    grid-area: box5;
+    background-color: #c9e265;
+    position: relative;
+    z-index: 1;
+}
+
+.box1, .box2, .box3, .box4 {
+    background-color: #03989e;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* 
+- Boxes: `#03989e`
+- Pink Circle: `#ff8888`
+- Yellow Circle: `#ffde59`
+- Dark Triangle: `#008037`
+- Light Triangle: `#c9e265`
+- **Light People**: `#6ce5e8`
+- **Dark People**: `#494f56`
+- **Light Green Box**: `#c9e265` */
